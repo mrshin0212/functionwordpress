@@ -1,0 +1,12 @@
+jQuery(document).on('mfpOpen', function(e /*, params */) {
+   
+  setTimeout(function (){
+    if ( typeof jQuery['wcpaInit'] == 'function') {
+ 
+      jQuery.wcpaInit();
+            jQuery.wcpaIterate();
+ 
+    }
+  }, 300);
+   
+});
